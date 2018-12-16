@@ -16,15 +16,15 @@ This makes it very simple to support routing in single page applications.
 ```
 const initialize = require('@abradley2/url-change-event')
 
-// initialize the listeners and interceptors. Returns a function 
+// initialize the listeners and interceptors. Returns a function
 // that will unsubscribe these listeners.
 const stopListening = initialize()
 
 // you can now listen to the "urlchange" event on the window
-window.addEventListener('urlchange', (location) => {
+window.addEventListener('urlchange', (event) => {
   // you can handle this however. The location on the document is passed for convenience
 
-  return document.location === location // true
+  return document.location === event.detail // true
 })
 ```
 

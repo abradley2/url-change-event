@@ -1,6 +1,6 @@
 {
   "name": "@abradley2/url-change-event",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Intercepts link clicks and url changes then fires an event",
   "main": "index.js",
   "scripts": {

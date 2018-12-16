@@ -1,6 +1,6 @@
 module.exports = function init (generateStateFromLink) {
   const onLocationChanged = () => {
-    const ev = new CustomEvent('urlchange', {
+    const ev = new window.CustomEvent('urlchange', {
       detail: document.location
     })
 
@@ -32,7 +32,6 @@ module.exports = function init (generateStateFromLink) {
       }
       el = el.parentNode
     }
-
   }
 
   window.addEventListener('popstate', onPopState)
